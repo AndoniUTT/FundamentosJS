@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Js</title>
+    <style> 
+
+        body{
+            background-image: url("gg/27569.jpg");
+        }
+        .container{
+            background-color: rgb(250, 250, 250);
+            width: 300px;
+            padding: 20px;
+            height: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 5px 5px ;
+        }
+
+        .container input{
+            border-radius: 3px;
+            width: 60%;
+            background-color: aliceblue;
+            padding: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .container .result {
+            border-radius: 3px;
+            width: 35%;
+            background-color: aliceblue;
+            padding: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .container button{
+            width: 110px;
+            height: 50px;
+            margin: 5px;
+            background-color: rgba(28, 29, 28, 0.726);
+            border: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 17px;
+            color: aliceblue;
+        }
+
+
+        h1 {
+            color: #2e2e2e;
+            font-weight: normal;
+            font-size: 40px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+          }
+
+        .container .btn{
+            width: 110px;
+            height: 50px;
+            margin: 5px;
+            background-color: rgb(255, 8, 0);
+            border: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 17px;
+        }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <input type="text" name="" id="num1" placeholder="Numero 1"> 
+        <br>
+        <input type="text" name="" id="num2" placeholder="Numero 2">   
+        <br>
+        <label for="">Resultado: </label><input class="result" type="text" name="" id="result" disabled >
+        <br>
+        <button onclick="sumar()">Sumar</button>
+        <button onclick="restar()">Restar</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button class="btn" onclick="limpiar()">Limpiar</button>
+        
+    </div>
+    <script src="./calculadora.js"></script>
+</body>
+</html>
